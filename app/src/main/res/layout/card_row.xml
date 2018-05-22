@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            />
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CURR"
+            android:layout_marginLeft="10dp"
+            card_view:layout_constraintLeft_toRightOf="@id/tv_time"/>
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short description"
+            android:layout_marginLeft="10dp"
+            card_view:layout_constraintLeft_toRightOf="@id/tv_currency"/>
+        <TextView
+            android:id="@+id/tv_label_imp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Importance: "
+            card_view:layout_constraintTop_toBottomOf="@id/tv_time"/>
+        <TextView
+            android:id="@+id/tv_importance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="imp value"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_time"
+            card_view:layout_constraintLeft_toRightOf="@id/tv_label_imp"/>
+        <TextView
+            android:id="@+id/tv_label_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/tv_previous"
+            android:text="Previous: "
+            card_view:layout_constraintTop_toBottomOf="@id/tv_importance"
+            />
+        <TextView
+            android:id="@+id/tv_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_importance"
+            card_view:layout_constraintLeft_toRightOf="@id/tv_label_prev"
+            android:text="prev_value"/>
+        <TextView
+            android:id="@+id/tv_label_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/tv_forecast"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_label_prev"
+            android:text="Forecast: "/>
+        <TextView
+            android:id="@+id/tv_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_label_prev"
+            card_view:layout_constraintLeft_toRightOf="@id/tv_label_forecast"
+            android:text="fore_value"/>
+        <TextView
+            android:id="@+id/tv_label_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/tv_actual"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_forecast"
+            android:text="Actual: "/>
+        <TextView
+            android:id="@+id/tv_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_forecast"
+            card_view:layout_constraintLeft_toRightOf="@id/tv_label_actual"
+            android:text="act_value"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

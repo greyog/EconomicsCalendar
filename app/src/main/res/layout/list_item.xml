@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvCurr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Currency"
+        app:layout_constraintStart_toEndOf="@+id/ivFlag"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:id="@+id/ivFlag"
+        android:layout_width="33dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTime"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvImp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Importance"
+        app:layout_constraintStart_toEndOf="@+id/tvCurr"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        app:layout_constraintStart_toEndOf="@+id/tvImp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Forecast"
+        app:layout_constraintStart_toEndOf="@+id/tvPrev"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tvAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Actual"
+        app:layout_constraintStart_toEndOf="@+id/tvFor"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        android:layout_marginLeft="8dp" />
+</android.support.constraint.ConstraintLayout>
